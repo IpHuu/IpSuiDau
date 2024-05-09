@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NotificationViewController" customModule="IpSuiDau" customModuleProvider="target">
+            <connections>
+                <outlet property="_btnBack" destination="icU-vU-qTp" id="z63-cK-b5c"/>
+                <outlet property="_lbHeader" destination="RIc-3U-lhL" id="OVI-0s-NaK"/>
+                <outlet property="_tbView" destination="Zfa-Jv-scD" id="bH1-mm-4yN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Zfa-Jv-scD">
+                    <rect key="frame" x="0.0" y="115" width="393" height="703"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIc-3U-lhL">
+                    <rect key="frame" x="148.66666666666666" y="68.666666666666671" width="96" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icU-vU-qTp">
+                    <rect key="frame" x="20" y="59" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="icU-vU-qTp" secondAttribute="height" id="9Vq-3c-T83"/>
+                        <constraint firstAttribute="height" constant="40" id="yW8-mh-XPh"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="iconArrowWTailBack"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="RIc-3U-lhL" firstAttribute="centerY" secondItem="icU-vU-qTp" secondAttribute="centerY" id="BXB-k8-Cxs"/>
+                <constraint firstItem="RIc-3U-lhL" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Ctn-OH-ntE"/>
+                <constraint firstItem="Zfa-Jv-scD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="HWB-Fw-n4L"/>
+                <constraint firstItem="icU-vU-qTp" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="W6F-Uz-4vs"/>
+                <constraint firstItem="icU-vU-qTp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="YEA-ae-igC"/>
+                <constraint firstItem="Zfa-Jv-scD" firstAttribute="top" secondItem="icU-vU-qTp" secondAttribute="bottom" constant="16" id="epW-Sx-XbB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Zfa-Jv-scD" secondAttribute="bottom" id="nxm-86-yMF"/>
+                <constraint firstItem="Zfa-Jv-scD" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="q1T-d0-GEe"/>
+            </constraints>
+            <point key="canvasLocation" x="-83.206106870229007" y="-12.67605633802817"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iconArrowWTailBack" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
